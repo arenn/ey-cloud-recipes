@@ -21,7 +21,7 @@
     mode 0755
   end
 
-  execute "install-rubygnome" do
+  execute "install_ruby-gnome2" do
     command "/home/deploy/install-rubygnome2"
     action :run
     user 'deploy'
