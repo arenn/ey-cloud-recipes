@@ -25,5 +25,6 @@
     command "/home/deploy/install-rubygnome2"
     action :run
     user 'deploy'
+    not_if { FileTest.exists?("/usr/lib/ruby/site_ruby/1.8/rsvg2.rb") }
   end
 
