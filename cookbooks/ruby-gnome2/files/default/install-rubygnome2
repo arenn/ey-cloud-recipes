@@ -1,0 +1,26 @@
+#!/bin/sh
+
+cd /home/deploy
+tar zxf ruby-gnome2-all-0.90.4.tar.gz
+cd ruby-gnome2-all-0.90.4
+(
+cd glib2
+ruby extconf.rb
+make
+sudo make install
+)
+(
+cd gdk_pixbuf2
+ruby extconf.rb
+make
+sudo make install
+)
+(
+cd rsvg2
+ruby extconf.rb
+make
+sudo make install
+)
+
+exit 0
+
