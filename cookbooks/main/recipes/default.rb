@@ -74,6 +74,9 @@
 # Upload our custom ssmtp.conf to set up outbound mail to route to AuthSMTP
 require_recipe "auth_smtp"
 
+# Install SSH keys
+require_recipe "sshkeys"
+
 # Do a manual install of the needed components from ruby-gnome2 since they
 # don't seem to be installable
 require_recipe "ruby-gnome2"
