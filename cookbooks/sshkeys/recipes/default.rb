@@ -12,7 +12,7 @@
     source "id_rsa"
     owner "deploy"
     group "deploy"
-    mode 0644
+    mode 0600
   end
 
   remote_file "/home/deploy/.ssh/id_rsa.pub" do
